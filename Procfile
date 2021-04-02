@@ -1,0 +1,1 @@
+web: gunicorn RemedyPaver.wsgi --log-file -

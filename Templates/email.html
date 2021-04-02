@@ -1,0 +1,47 @@
+{% extends "inherit.html" %}
+{% load static %}
+{% block extra_head %}
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,600;0,700;0,800;0,900;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/09e314988c.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="{% static '/css/email.css' %}">
+<title>::|:sendEmail</title>
+{% endblock %}
+{% block content %}
+
+    <!--Banner Start-->
+    <div class="banner">
+        <div class="picEm">
+            <img src="{% static '/images/email.jpg' %}" alt="">
+        </div>
+        <span class="parallax" >Get In Touch</span>
+    </div>
+    <!--Banner End-->
+    <!--Email Part Start-->
+    <div class="emailBody">
+        <!--Email Sub Form-->
+        <form action="">
+            <span>Send An Email</span>
+            <div class="first">
+                <input type="text" name="name" id="details" placeholder="Name" >
+                <input type="text" name="email" id="details" placeholder="Email" >
+                <input type="text" name="pnumber" id="details" placeholder="Phone" >
+            </div>
+            <textarea id="message" placeholder="Your Message..." ></textarea>
+            <button type="submit" >Send</button>
+        </form>
+        <!--Email Sub Form-->
+    </div>
+    <!--Email Part End-->
+    <script>
+
+        window.addEventListener('scroll', function(){
+            const parallax = document.querySelector('.parallax');
+            let scrollDownPosition = window.pageYOffset;
+
+            parallax.style.transform = 'translateY(' + scrollDownPosition * -1 + 'px)';
+        })
+
+    </script>
+
+{% endblock %}

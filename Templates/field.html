@@ -1,0 +1,62 @@
+{% extends "inherit.html" %}
+{% load static %}
+{% block extra_head %}
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,600;0,700;0,800;0,900;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/09e314988c.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<link rel="stylesheet" href="{% static '/css/field.css' %}">
+<title>::|:OnTheField</title>
+{% endblock %}
+{% block content %}
+
+    <!--Into Place-->
+    <div class="PrBan" >
+        <span class="parallax1" >Products On The Field</span>
+        <div class="picFl">
+            <img src="{% static '/images/bl.jpeg' %}" alt="">
+        </div>
+    </div>
+    <!--Links Products-->
+    <div class="linkField">
+        <div class="linkSp"  data-aos="fade-up">
+            <h2>Products LinkList</h2>
+            <p>Click on The Product You Want To view</p>
+        </div>
+        <!--LIST VIEW DJANGO-->
+        <div class="theLinks">
+            <div class="inerL" data-aos="fade-up">
+                <a href="{% url 'elegance' %}"><h2>Elegance Shape</h2></a>
+                <a href="{% url 'arrow' %}"><h2>Arrow Shape</h2></a>
+                <a href="{% url 'dene' %}"><h2>Dene Shape</h2></a>
+                <a href="{% url 'dazzle' %}"><h2>Dazzle Shape</h2></a>
+                <a href="{% url 'ZigZag' %}"><h2>ZigZag Shape</h2></a>
+                <a href="{% url 'lily' %}"><h2>Lily Tiles Shape</h2></a>
+            </div>
+        </div>
+    </div>
+
+    <!--JAVASCRIPTS-->
+    <script>
+
+        window.addEventListener('scroll', function(){
+            const parallax1 = document.querySelector('.parallax1');
+            let scrollDownPosition = window.pageYOffset;
+
+            parallax1.style.transform = 'translateY(' + scrollDownPosition * -2 + 'px)';
+        })
+
+    </script>
+
+    <!--SCROLL ANIMATION-->
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 300,
+            duration: 1000
+        });
+    </script>
+
+    <!--SCROLL ANIMATION-->
+{% endblock %}

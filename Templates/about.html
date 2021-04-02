@@ -1,0 +1,148 @@
+{% extends "inherit.html" %}
+{% load static %}
+{% block extra_head %}
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,600;0,700;0,800;0,900;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/09e314988c.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<link rel="stylesheet" href="{% static '/css/email.css' %}">
+<link rel="stylesheet" href="{% static '/css/about.css' %}">
+<title>::|:AboutUs</title>
+{% endblock %}
+{% block content %}
+
+
+    <!--Banner Start-->
+    <div class="banner">
+        <div class="picEm">
+            <img src="{% static '/images/blackYellow.jpeg' %}" class="parallax" alt="">
+        </div>
+        <h1 class="parallax1" >Remedy</h1>
+        <h2 class="parallax2" >Pavers</h2>
+        <p class="parallax3" >From Interlocking coloured Cabros, Road chanels to Hollows. </p>
+    </div>
+    <!--ABOUT SECTION-->
+    <div class="secA">
+        <div class="mainA" data-aos="fade-up">
+            <h1>About Us</h1>
+            <div class="navA">
+                <!--Abouts Nav-->
+                <a href="#ourStory"><span id="St" >Our Story</span></a>
+                <a href="#ourProducts"><span id="Pr" >Our Products</span></a>
+                <a href="#ourPeople"><span id="Pe" >Our People</span></a>
+                <a href="#Tests"><span id="Te" >Testimonials</span></a>
+            </div>
+            <!--Abouts Nav Indicate-->
+            <div class="indicate">
+                <div class="ind1"></div>
+            </div>
+        </div>
+        <div class="sections">
+            <!--Abouts Item Sections-->
+            <div class="ourStory" id="ourStory"  data-aos="fade-up">
+                <div class="headT">
+                    <div class="imSvg">
+                        <i class="fas fa-star" id="svg" ></i>
+                    </div>
+                    <h2>Our Story</h2>
+                </div>
+                <div class="str">
+                    <p>Remedy Pavers was started by two brilliant mind at 2019.Their 
+                        idea was to give owners of packing grounds, home compounds and driveways power to decorate this areas as they could imagine and with as many colors as possible.</p>
+                </div>
+                <div class="placeInd" style="background-color: rgb(3, 119, 119);" ></div>
+            </div>
+            <div class="ourStory"  id="ourProducts"  data-aos="fade-up">
+                <div class="headT">
+                    <div class="imSvg">
+                        <i class="fab fa-product-hunt" id="svg" ></i>
+                    </div>
+                    <h2>Our Products</h2>
+                </div>
+                <div class="str">
+                    <p>Our first priority as Remedy Paver is to create high quality products.To achieve this we use the best machinary available and employ qualified labour.Then we store this products in condusive environments to endure they dry up and harden properly.</p>
+                </div>
+                <div class="placeInd" style="background-color: rgb(51, 255, 0);" ></div>
+            </div>
+            <div class="ourStory" id="ourPeople"  data-aos="fade-up">
+                <div class="headT">
+                    <div class="imSvg">
+                        <i class="fas fa-users" id="svg" ></i>
+                    </div>
+                    <h2>Our People</h2>
+                </div>
+                <div class="str">
+                    <p>We are made up of very qualified and Experienced employees.Some of which are involved in the creation of the pavers while the other bunch in installation of the pavers.This employees are disciplened and trustworthy even during paver installations in our customers grounds.</p>
+                </div>
+                <div class="placeInd"  style="background-color: rgb(255, 115, 0);"></div>
+            </div>
+            <div class="ourStory" id="Tests"  data-aos="fade-up">
+                <div class="headT">
+                    <div class="imSvg">
+                        <i class="far fa-smile" id="svg" ></i>
+                    </div>
+                    <h2>Testimonials</h2>
+                </div>
+                <div class="test1">
+                    <!--Testimonial Loop-->
+                    {% for test in testis %}
+                    <div class="testm">
+                        <div class="messa">
+                            <div class="q"><i class="fas fa-quote-left" id="q" ></i></div>
+                            <p>{{test.message}}</p>
+                        </div>
+                        <div class="name"><h3>{{test.my_name}}</h3></div>
+                    </div>
+                    {% endfor %}
+                    
+                </div>
+                <div class="placeInd" style="background-color: rgb(25, 0, 255);"></div>
+            </div>
+        </div>
+    </div>
+    <div class="sepF"></div>
+
+
+    <!--JAVA SCRIPT-->
+    <script>
+
+        window.addEventListener('scroll', function(){
+            const parallax1 = document.querySelector('.parallax1');
+            const parallax2 = document.querySelector('.parallax2');
+            const parallax3 = document.querySelector('.parallax3');
+            let scrollDownPosition = window.pageYOffset;
+
+            parallax1.style.transform = 'translateX(' + scrollDownPosition * 2 + 'px)';
+            parallax2.style.transform = 'translateX(' + scrollDownPosition * -2  + 'px)';
+            parallax3.style.transform = 'translateX(' + scrollDownPosition * 2 + 'px)';
+        })
+
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+        
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+
+     <!--SCROLL ANIMATION-->
+
+     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+     <script>
+         AOS.init({
+             offset: 300,
+             duration: 1000
+         });
+     </script>
+ 
+     <!--SCROLL ANIMATION-->
+ 
+{% endblock %}
+{% block java %}
+<script src="{% static '/js/about.js' %}"></script>
+<script src="{% static '/js/inherit.js' %}"></script>
+{% endblock %}

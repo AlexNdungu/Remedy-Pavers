@@ -1,0 +1,153 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,600;0,700;0,800;0,900;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/09e314988c.js" crossorigin="anonymous"></script>
+    {% block extra_head %}{% endblock %}
+    <link rel="stylesheet" href="{% static '/css/inherit.css' %}">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+    <title></title>
+</head>
+<body>
+
+    <!--PRELOADER-->
+    <div class="preloader">
+        <div class="wheel"></div>
+        <span>WELCOME</span>
+    </div>
+    <!--PRELOADER-->
+
+    <!--CURSOR STYLE-->
+    <div class="cursor"></div>
+    <!--Header Start-->
+
+    <div class="header">
+        <!--Banner Side Start-->
+        <div class="logo-side">
+            <!--Logo Start-->
+            <div class="logo">
+                <span>REMEDY</span>
+                <span>PAVERS</span>
+            </div>
+            <!--Logo Start-->
+            <!--BurgerNav Start-->
+            <div class="nav">
+                <div class="bar"></div>
+            </div>
+            <!--BurgerNav Start-->
+        </div>
+        <!--Banner Side Start-->
+        <!--Image Side Start-->
+        <div class="image-side">
+            <!--Contact Button start-->
+            <div class="contact">
+                <a href="{% url 'sendEmail' %}">Contacts</a>
+            </div>
+            <!--Contact Button start-->
+            <!--Login Button start-->
+            <div class="login">
+                <a href="{% url 'login' %}"><i class="fas fa-sign-in-alt" id="log" ></i></a>
+            </div>
+            <!--Login Button start-->
+        </div>
+        <!--Image Side Start-->
+    </div>
+    <!--Header End-->
+    <!--Slide Nav Start-->
+    <div class="slideNav">
+        <ul class="listNav" >
+            <li><a href="{% url 'index' %}">Home</a></li>
+            <li><a href="{% url 'products' %}">Products</a></li>
+            <li><a href="{% url 'about' %}">Abouts</a></li>
+            <li><a href="{% url 'contact' %}">Contact Us</a></li>
+            <li><a href="{% url 'field' %}">FieldWork</a></li>
+        </ul>
+    </div>
+    <!--Slide Nav end-->
+
+    {% block content %}
+    {% endblock %}
+
+<!--FOOTER-->
+
+    <div class="footer">
+        <div class="onesec">
+            <div class="direction">
+                <i class="fas fa-globe-africa" id="call" ></i>
+                <span>P.O Box 13071 - 00200</span>
+                <p>Ruai kangundo rd Opp. Shell Petro Station, next to Outreach Ministry Church.</p>
+                <i class="fas fa-mail-bulk" id="mail"></i>
+                <div class="mail">
+                    <div class="mailgo">
+                        <a href="{% url 'sendEmail' %}"">Send</a>
+                        <i class="fas fa-long-arrow-alt-right" id="sending" ></i>
+                    </div>
+                </div>
+            </div>
+            <div class="line"></div>
+            <div class="phones">
+                <i class="fas fa-phone" id="call" ></i>
+                <div class="p">
+                    <span>0715 525 530,   </span>
+                    <span>    0724 853 839</span>
+                </div>
+            </div>
+            <div class="line"></div>
+            <div class="siteNav">
+                <i class="fas fa-compass" id="call" ></i>
+                <ul class="" >
+                    <li><a href="{% url 'index' %}">Home</a></li>
+                    <li><a href="{% url 'products' %}">Products</a></li>
+                    <li><a href="{% url 'about' %}">Abouts</a></li>
+                    <li><a href="{% url 'contact' %}">Contacts</a></li>
+                    <li><a href="{% url 'field' %}">FieldWork</a></li>
+                </ul>
+            </div>
+            <div class="Commun">
+                <div class="face"><a href="https://www.facebook.com/remedypavers"><i class="fab fa-facebook-f" id="face" ></i></a></div>
+                <div class="instagram"><a href="https://www.instagram.com/remedypavers"><i class="fab fa-instagram"  id="face"></i></a></div>
+            </div>
+        </div>
+        <div class="terms">
+            <span><i class="far fa-copyright" id="copyright"></i>2021 RemedyPaver</span>
+            <div class="tterms">
+                <a href="{% url 'contact' %}">Terms & Conditions</a>
+                <a href="{% url 'contact' %}">Privacy Policy</a>
+            </div>
+        </div>
+    </div>
+
+<!--FOOTER END-->
+    <script>
+        window.addEventListener("scroll", function(){
+            let header = document.querySelector('.header');
+            header.classList.toggle("sticky", window.scrollY > 0);
+        })
+    </script>
+
+    <!--LOADING ANIMATION-->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/timelinejs/3.6.6/js/timeline-min.js" integrity="sha512-znL7NlNFFvWYptamSie8oZKRUwq+60RJtn8lkeTCFA6wpBr6ViJwabt1f15JcpiNaxhy8tixwCRFVR7kTyfJXA==" crossorigin="anonymous"></script>
+
+    <!--LOADING ANIMATION PRELOADER-->
+
+    <script>
+        $(window).on("load", function(){
+            $(".preloader").fadeOut(1000);
+        });
+    </script>
+
+    <!--LOADING ANIMATION PRELOADER-->
+
+</body>
+{% block java %}
+<script src="{% static '/js/inherit.js' %}"></script>
+{% endblock %}
+</html>

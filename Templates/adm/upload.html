@@ -1,0 +1,55 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/09e314988c.js" crossorigin="anonymous"></script>  
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,600;0,700;0,800;0,900;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static '/css/upload.css' %}">
+    <title>::|:Upload</title>
+</head>
+<body>
+    <div class="header">
+        <!--Logo Start-->
+        <div class="logo">
+            <span>REMEDY</span>
+            <span>PAVERS</span>
+        </div>
+        <!--Logo End-->
+        <!--Upload Nav Start-->
+        <div class="logNav">
+            <a href="{% url 'field' %}">View Uploads</a>
+            <a href="{% url 'logOut' %}">LogOut</a>
+        </div>
+        <!--Upload Nav End-->
+    </div>
+    <!--Upload Sec start-->
+    <div class="secUp">
+        <form method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            {{form}}
+            <!--<input class="input" type="file" id="file" >
+            <textarea name=" Describe " ></textarea>-->
+            <button  id="upload" type="submit" >Save<i class="fas fa-check" id="upTick"  ></i></button>
+        </form>
+        <div class="viewIm">
+            <span>This Is The Image You Want To Upload!!!</span>
+            <img src="" id="preview" class="resize" alt="">
+        </div>
+    </div>
+    <!--Upload Sec End-->
+    <script>
+
+        var file = document.getElementById('id_image_upload'); 
+        var preview = document.getElementById('preview'); 
+        file.addEventListener('change', function() {   
+        preview.src = URL.createObjectURL(this.files[0]); 
+        }, false); 
+
+    </script>
+
+</body>
+</html>

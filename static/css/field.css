@@ -1,0 +1,230 @@
+/* Banner */
+
+.PrBan {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    font-family: 'Rubik', sans-serif;
+}
+
+.PrBan::before {
+    content: "";
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0,0.3);
+}
+
+.PrBan span {
+    position: absolute;
+    left: 25%;
+    bottom: 50%;
+    font-size: 70px;
+    font-weight: 500;
+    color: white;
+}
+
+.picFl {
+    height: 100%;
+    width: 100%;
+}
+
+.picFl img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* Links  */
+
+.linkField {
+    font-family: 'Rubik', sans-serif;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.linkSp {
+    height: 20vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.linkSp h2 {
+    font-size: 30px;
+}
+
+.linkSp p {
+    font-size: 20px;
+    margin-top: 10px;
+    color: #3A3FC0;
+}
+
+.theLinks {
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-center;
+}
+
+.inerL {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+
+
+/* Responsiveness */
+
+/* 1030px */
+
+@media only screen and (max-width: 1030px){
+    /* Banner */
+
+    .PrBan {
+        height: 700px;
+    }
+
+    .PrBan::before {
+        height: 700px;
+    }
+
+    .PrBan span {
+        position: absolute;
+        left: 17%;
+        bottom: 50%;
+        font-size: 70px;
+        font-weight: 500;
+        color: white;
+    }
+
+        /* Links  */
+
+    .linkField {
+        height: 800px;
+    }
+
+    .linkSp {
+        height: 300px;
+    }
+
+}
+
+/* 840px */
+
+@media only screen and (max-width: 840px){
+
+    /* Banner */
+
+    .PrBan {
+        height: 600px;
+    }
+
+    .PrBan::before {
+        height: 600px;
+    }
+
+    .PrBan span {
+        text-align: center;
+        left: 5%;
+        bottom: 40%;
+    }
+    
+}
+
+/* 550px */
+
+@media only screen and (max-width: 550px){
+    /* Banner */
+
+    .PrBan {
+        height: 550px;
+    }
+
+    .PrBan::before {
+        height: 550px;
+    }
+
+    .PrBan span {
+        text-align: center;
+        left: 5%;
+        bottom: 40%;
+    }
+}
+
+/* 420px */
+
+@media only screen and (max-width: 420px){
+     /* Banner */
+
+     .PrBan {
+        height: 550px;
+    }
+
+    .PrBan::before {
+        height: 550px;
+    }
+
+    .PrBan span {
+        text-align: center;
+        left: 5%;
+        bottom: 30%;
+    }
+}
+
+/* 375px */
+@media only screen and (max-width: 375px){
+
+    /* Link Part */
+
+    .linkField {
+        height: 100vh;
+    }
+
+    .linkSp {
+        height: 200px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .linkSp h2 {
+        font-size: 26px;
+    }
+    
+    .linkSp p {
+        font-size: 16px;
+    }
+
+}
+
+/* 320px */
+@media only screen and (max-width: 320px){
+    .PrBan span {
+        position: absolute;
+        left: 0%;
+        font-size: 60px;
+        font-weight: 500;
+        color: white;
+    }
+}
+
+/* 290px */
+@media only screen and (max-width: 290px){
+    .linkSp p {
+        text-align: center;
+    }
+}

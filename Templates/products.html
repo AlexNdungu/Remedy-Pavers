@@ -1,0 +1,497 @@
+{% extends "inherit.html" %}
+{% load static %}
+{% block extra_head %}
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,600;0,700;0,800;0,900;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/09e314988c.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="{% static '/css/products.css' %}">
+<title>::|:Products</title>
+{% endblock %}
+{% block content %}
+
+    <!--Slider Start-->
+    <div class="prodSlider">
+        <div class="banner-1">
+            <img src="{% static '/images/prodSlider/beautifRed.jpeg' %}" alt="">
+            <div class="box-text">
+                <h3>-We offer Quality Products-</h3>
+            </div>
+        </div>
+        <div class="banner-2">
+            <img src="{% static '/images/prodSlider/blackYellow.jpeg' %}" alt="">
+            <div class="box-text">
+                <h3>-Our Services Are Optimal-</h3>
+            </div>
+        </div>
+        <div class="banner-3">
+            <img src="{% static '/images/prodSlider/fieldYellow2.jpeg' %}" alt="">
+            <div class="box-text">
+                <h3>-Products Are Available in Differnt Colors-</h3>
+            </div>
+        </div>
+        <div class="banner-4">
+            <img src="{% static '/images/prodSlider/blackyy.jpeg' %}" alt="">
+            <div class="box-text">
+                <h3>-Our Designs Are Beautiful-</h3>
+            </div>
+        </div>
+    </div>
+    <!--Slider End-->
+    <!--Products Sample Start-->
+    <div class="smp">
+        <h1>Our Products Categories</h1>
+    </div>
+    <!--Products Sample End-->
+    <!--Products Slider Start-->
+    <div class="main-prod">
+        <!--Prev-->
+        <div class="prev"><i class="fas fa-angle-left" id="prev" ></i></div>
+        <!--Prev-->
+        <!--Slider It Start-->
+        <div class="prSl">
+            <!--CLONE LILY DESIGN-->
+            <div class="thePr" id="lastClone">
+                <!--Main Image Section-->
+                <div class="image">
+                    <!--Main Image-->
+                    <div class="mainIm">
+                        <img id="thePs" id="lily"  src="{% static '/images/Products/Lily/lily1.jpeg' %}" alt="">
+                    </div>
+                    <!--Hover Image-->
+                    <div class="slideIm">
+                        <div class="img">
+                            <img class="lilys activeLy" src="{% static '/images/Products/Lily/lily1.jpeg' %}" alt="">
+                        </div>
+                        <div class="img">
+                            <img class="lilys" src="{% static '/images/Products/Lily/lily2.jpeg' %}" alt="">
+                        </div>
+                        <div class="img">
+                            <img  class="lilys" src="{% static '/images/Products/Lily/lily3.jpeg' %}" alt="">
+                        </div>
+                    </div>
+                </div>
+                <!--Main Description-->
+                <div class="descP">
+                    <div class="heading">
+                        <h1>LILY DESIGN SHAPE</h1>
+                        <div class="cost">
+                            <h4>Factory Prices</h4>
+                            <span>sh1000</span>
+                            <span>per M_Sq</span>
+                        </div>
+                    </div>
+                    <!--Main Color Sample-->
+                    <div class="color">
+                        <h4>Available Colors</h4>
+                        <div id="many">
+                            <div class="div" style="background-color: #C4C4C4;" ></div>
+                            <div class="div" style="background-color: #757575;"></div>
+                            <div class="div" style="background-color: #000000;"></div>
+                            <div class="div" style="background-color: #C30B0B;"></div>
+                            <div class="div" style="background-color: #E2CF25;"></div>
+                        </div>
+                    </div>
+                    <div class="size">
+                        <h4>Available Sizes</h4>
+                        <span>60mm (Medium_Heavy Duty)</span>
+                    </div>
+                    <div class="size">
+                        <h4>Transport Services</h4>
+                        <span>sh100 per M_sq (WITHIN NAIROBI)</span>
+                    </div>
+                </div>
+
+            </div>
+            <!--ELEGANCE-->
+            <div class="thePr">
+                <!--Main Image Section-->
+                <div class="image">
+                    <!--Main Image-->
+                    <div class="mainIm">
+                        <img id="thePs"  src="{% static '/images/Products/Elegance/elegance1.jpeg' %}" alt="">
+                    </div>
+                    <!--Hover Image-->
+                    <div class="slideIm">
+                        <div class="img">
+                            <img class="many active" src="{% static '/images/Products/Elegance/elegance1.jpeg' %}" alt="">
+                        </div>
+                        <div class="img">
+                            <img class="many" src="{% static '/images/Products/Elegance/elegance2.jpeg' %}" alt="">
+                        </div>
+                        <div class="img">
+                            <img  class="many" src="{% static '/images/Products/Elegance/beautifRed.jpeg' %}" alt="">
+                        </div>
+                    </div>
+                </div>
+                <!--Main Description-->
+                <div class="descP">
+                    <div class="heading">
+                        <h1>ELEGANCE SHAPE</h1>
+                        <div class="cost">
+                            <h4>Factory Prices</h4>
+                            <span>sh1000</span>
+                            <span>per M_Sq</span>
+                        </div>
+                    </div>
+                    <!--Main Color Sample-->
+                    <div class="color">
+                        <h4>Available Colors</h4>
+                        <div id="many">
+                            <div class="div" style="background-color: #C4C4C4;" ></div>
+                            <div class="div" style="background-color: #757575;"></div>
+                            <div class="div" style="background-color: #000000;"></div>
+                            <div class="div" style="background-color: #C30B0B;"></div>
+                            <div class="div" style="background-color: #E2CF25;"></div>
+                        </div>
+                    </div>
+                    <div class="size">
+                        <h4>Available Sizes</h4>
+                        <span>60mm (Medium_Heavy Duty)</span>
+                    </div>
+                    <div class="size">
+                        <h4>Transport Services</h4>
+                        <span>sh100 per M_sq (WITHIN NAIROBI)</span>
+                    </div>
+                </div>
+            </div>
+            <!--ARROW-->
+            <div class="thePr">
+                <!--Main Image Section-->
+                <div class="image">
+                    <!--Main Image-->
+                    <div class="mainIm">
+                        <img id="thePs" id="arrow"  src="{% static '/images/Products/Arrow/blackyy.jpeg' %}" alt="">
+                    </div>
+                    <!--Hover Image-->
+                    <div class="slideIm">
+                        <div class="img">
+                            <img class="arrows activeA" src="{% static '/images/Products/Arrow/blackyy.jpeg' %}" alt="">
+                        </div>
+                        <div class="img">
+                            <img class="arrows" src="{% static '/images/Products/Arrow/grYellow.jpeg' %}" alt="">
+                        </div>
+                        <div class="img">
+                            <img  class="arrows" src="{% static '/images/Products/Arrow/grYellow.jpeg' %}" alt="">
+                        </div>
+                    </div>
+                </div>
+                <!--Main Description-->
+                <div class="descP">
+                    <div class="heading">
+                        <h1>ARROW HEAD SHAPE</h1>
+                        <div class="cost">
+                            <h4>Factory Prices</h4>
+                            <span>sh1000</span>
+                            <span>per M_Sq</span>
+                        </div>
+                    </div>
+                    <!--Main Color Sample-->
+                    <div class="color">
+                        <h4>Available Colors</h4>
+                        <div id="many">
+                            <div class="div" style="background-color: #C4C4C4;" ></div>
+                            <div class="div" style="background-color: #757575;"></div>
+                            <div class="div" style="background-color: #000000;"></div>
+                            <div class="div" style="background-color: #C30B0B;"></div>
+                            <div class="div" style="background-color: #E2CF25;"></div>
+                        </div>
+                    </div>
+                    <div class="size">
+                        <h4>Available Sizes</h4>
+                        <span>60mm (Medium_Heavy Duty)</span>
+                    </div>
+                    <div class="size">
+                        <h4>Transport Services</h4>
+                        <span>sh100 per M_sq (WITHIN NAIROBI)</span>
+                    </div>
+                </div>
+            </div>
+            <!--DAZZLE SHAPE-->
+            <div class="thePr" >
+                <!--Main Image Section-->
+                <div class="image">
+                    <!--Main Image-->
+                    <div class="mainIm">
+                        <img id="thePs" id="dazzle"  src="{% static '/images/Products/Dazzle/dazzle1.jpeg' %}" alt="">
+                    </div>
+                    <!--Hover Image-->
+                    <div class="slideIm">
+                        <div class="img">
+                            <img class="dazzles activeDz" src="{% static '/images/Products/Dazzle/dazzle1.jpeg' %}" alt="">
+                        </div>
+                        <div class="img">
+                            <img class="dazzles" src="{% static '/images/Products/Dazzle/dazzle2.jpeg' %}" alt="">
+                        </div>
+                        <div class="img">
+                            <img  class="dazzles" src="{% static '/images/Products/Dazzle/dazzle3.jpeg' %}" alt="">
+                        </div>
+                    </div>
+                </div>
+                <!--Main Description-->
+                <div class="descP">
+                    <div class="heading">
+                        <h1>DAZZLE SHAPE</h1>
+                        <div class="cost">
+                            <h4>Factory Prices</h4>
+                            <span>sh1000</span>
+                            <span>per M_Sq</span>
+                        </div>
+                    </div>
+                    <!--Main Color Sample-->
+                    <div class="color">
+                        <h4>Available Colors</h4>
+                        <div id="many">
+                            <div class="div" style="background-color: #C4C4C4;" ></div>
+                            <div class="div" style="background-color: #757575;"></div>
+                            <div class="div" style="background-color: #000000;"></div>
+                            <div class="div" style="background-color: #C30B0B;"></div>
+                            <div class="div" style="background-color: #E2CF25;"></div>
+                        </div>
+                    </div>
+                    <div class="size">
+                        <h4>Available Sizes</h4>
+                        <span>60mm (Medium_Heavy Duty)</span>
+                    </div>
+                    <div class="size">
+                        <h4>Transport Services</h4>
+                        <span>sh100 per M_sq (WITHIN NAIROBI)</span>
+                    </div>
+                </div>
+            </div>
+            <!--DENE SHAPE-->
+            <div class="thePr">
+                 <!--Main Image Section-->
+                 <div class="image">
+                    <!--Main Image-->
+                    <div class="mainIm">
+                        <img id="thePs" id="deny"  src="{% static '/images/Products/Dene/dene1.jpeg' %}" alt="">
+                    </div>
+                    <!--Hover Image-->
+                    <div class="slideIm">
+                        <div class="img">
+                            <img class="denes activeDen" src="{% static '/images/Products/Dene/dene1.jpeg' %}" alt="">
+                        </div>
+                        <div class="img">
+                            <img class="denes" src="{% static '/images/Products/Dene/dene2.jpeg' %}" alt="">
+                        </div>
+                        <div class="img">
+                            <img  class="denes" src="{% static '/images/Products/Dene/dene3.jpeg' %}" alt="">
+                        </div>
+                    </div>
+                </div>
+                <!--Main Description-->
+                <div class="descP">
+                    <div class="heading">
+                        <h1>DUNE SHAPE</h1>
+                        <div class="cost">
+                            <h4>Factory Prices</h4>
+                            <span>sh1000</span>
+                            <span>per M_Sq</span>
+                        </div>
+                    </div>
+                    <!--Main Color Sample-->
+                    <div class="color">
+                        <h4>Available Colors</h4>
+                        <div id="many">
+                            <div class="div" style="background-color: #C4C4C4;" ></div>
+                            <div class="div" style="background-color: #757575;"></div>
+                            <div class="div" style="background-color: #000000;"></div>
+                            <div class="div" style="background-color: #C30B0B;"></div>
+                            <div class="div" style="background-color: #E2CF25;"></div>
+                        </div>
+                    </div>
+                    <div class="size">
+                        <h4>Available Sizes</h4>
+                        <span>60mm (Medium_Heavy Duty)</span>
+                    </div>
+                    <div class="size">
+                        <h4>Transport Services</h4>
+                        <span>sh100 per M_sq (WITHIN NAIROBI)</span>
+                    </div>
+                </div>
+            </div>
+            <!--LILY DESIGN SHAPE-->
+            <div class="thePr">
+                <!--Main Image Section-->
+                <div class="image">
+                    <!--Main Image-->
+                    <div class="mainIm">
+                        <img id="thePs" id="lile"  src="{% static '/images/Products/Lily/lily1.jpeg' %}" alt="">
+                    </div>
+                    <!--Hover Image-->
+                    <div class="slideIm">
+                        <div class="img">
+                            <img class="lilys activeLy" src="{% static '/images/Products/Lily/lily1.jpeg' %}" alt="">
+                        </div>
+                        <div class="img">
+                            <img class="lilys" src="{% static '/images/Products/Lily/lily2.jpeg' %}" alt="">
+                        </div>
+                        <div class="img">
+                            <img  class="lilys" src="{% static '/images/Products/Lily/lily3.jpeg' %}" alt="">
+                        </div>
+                    </div>
+                </div>
+                <!--Main Description-->
+                <div class="descP">
+                    <div class="heading">
+                        <h1>LILY DESIGN SHAPE</h1>
+                        <div class="cost">
+                            <h4>Factory Prices</h4>
+                            <span>sh1000</span>
+                            <span>per M_Sq</span>
+                        </div>
+                    </div>
+                    <!--Main Color Sample-->
+                    <div class="color">
+                        <h4>Available Colors</h4>
+                        <div id="many">
+                            <div class="div" style="background-color: #C4C4C4;" ></div>
+                            <div class="div" style="background-color: #757575;"></div>
+                            <div class="div" style="background-color: #000000;"></div>
+                            <div class="div" style="background-color: #C30B0B;"></div>
+                            <div class="div" style="background-color: #E2CF25;"></div>
+                        </div>
+                    </div>
+                    <div class="size">
+                        <h4>Available Sizes</h4>
+                        <span>60mm (Medium_Heavy Duty)</span>
+                    </div>
+                    <div class="size">
+                        <h4>Transport Services</h4>
+                        <span>sh100 per M_sq (WITHIN NAIROBI)</span>
+                    </div>
+                </div>
+            </div>
+            <!--ZigZag DESIGN SHAPE-->
+            <div class="thePr">
+                <!--Main Image Section-->
+                <div class="image">
+                    <!--Main Image-->
+                    <div class="mainIm">
+                        <img id="thePs" id="zig"  src="{% static '/images/Products/ZigZag/ZigZag1.jpeg' %}" alt="">
+                    </div>
+                    <!--Hover Image-->
+                    <div class="slideIm">
+                        <div class="img">
+                            <img class="zigs activezig" src="{% static '/images/Products/ZigZag/ZigZag1.jpeg' %}" alt="">
+                        </div>
+                        <div class="img">
+                            <img class="zigs" src="{% static '/images/Products/ZigZag/ZigZag2.jpeg' %}" alt="">
+                        </div>
+                        <div class="img">
+                            <img  class="zigs" src="{% static '/images/Products/ZigZag/ZigZag4.jpeg' %}" alt="">
+                        </div>
+                    </div>
+                </div>
+                <!--Main Description-->
+                <div class="descP">
+                    <div class="heading">
+                        <h1>ZIGZAG SHAPE</h1>
+                        <div class="cost">
+                            <h4>Factory Prices</h4>
+                            <span>sh1000</span>
+                            <span>per M_Sq</span>
+                        </div>
+                    </div>
+                    <!--Main Color Sample-->
+                    <div class="color">
+                        <h4>Available Colors</h4>
+                        <div id="many">
+                            <div class="div" style="background-color: #C4C4C4;" ></div>
+                            <div class="div" style="background-color: #757575;"></div>
+                            <div class="div" style="background-color: #000000;"></div>
+                            <div class="div" style="background-color: #C30B0B;"></div>
+                            <div class="div" style="background-color: #E2CF25;"></div>
+                        </div>
+                    </div>
+                    <div class="size">
+                        <h4>Available Sizes</h4>
+                        <span>60mm (Medium_Heavy Duty)</span>
+                    </div>
+                    <div class="size">
+                        <h4>Transport Services</h4>
+                        <span>sh100 per M_sq (WITHIN NAIROBI)</span>
+                    </div>
+                </div>
+            </div>
+            <!--ELEGANCE FIRST CLONE-->
+            <div class="thePr" id="firstClone">
+                <!--Main Image Section-->
+                <div class="image">
+                    <!--Main Image-->
+                    <div class="mainIm">
+                        <img id="thePs"  src="{% static '/images/Products/Elegance/elegance1.jpeg' %}" alt="">
+                    </div>
+                    <!--Hover Image-->
+                    <div class="slideIm">
+                        <div class="img">
+                            <img class="many active" src="{% static '/images/Products/Elegance/elegance1.jpeg' %}" alt="">
+                        </div>
+                        <div class="img">
+                            <img class="many" src="{% static '/images/Products/Elegance/elegance2.jpeg' %}" alt="">
+                        </div>
+                        <div class="img">
+                            <img  class="many" src="{% static '/images/Products/Elegance/beautifRed.jpeg' %}" alt="">
+                        </div>
+                    </div>
+                </div>
+                <!--Main Description-->
+                <div class="descP">
+                    <div class="heading">
+                        <h1>ELEGANCE SHAPE</h1>
+                        <div class="cost">
+                            <h4>Factory Prices</h4>
+                            <span>sh1000</span>
+                            <span>per M_Sq</span>
+                        </div>
+                    </div>
+                    <!--Main Color Sample-->
+                    <div class="color">
+                        <h4>Available Colors</h4>
+                        <div id="many">
+                            <div class="div" style="background-color: #C4C4C4;" ></div>
+                            <div class="div" style="background-color: #757575;"></div>
+                            <div class="div" style="background-color: #000000;"></div>
+                            <div class="div" style="background-color: #C30B0B;"></div>
+                            <div class="div" style="background-color: #E2CF25;"></div>
+                        </div>
+                    </div>
+                    <div class="size">
+                        <h4>Available Sizes</h4>
+                        <span>60mm (Medium_Heavy Duty)</span>
+                    </div>
+                    <div class="size">
+                        <h4>Transport Services</h4>
+                        <span>sh100 per M_sq (WITHIN NAIROBI)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Slider It End-->
+        <!--Next-->
+        <div class="next"><i class="fas fa-angle-right" id="next" ></i></div>
+        <!--Next-->
+    </div>
+    <!--Products Slider End-->
+    <div class="payment">
+        <i class="fas fa-info-circle" id="info" ></i>
+        <div class="payz">
+            <div class="Tr">
+                <h4 style="margin-bottom: 10px;">Transport Services</h4>
+                <span style="color: rgb(67, 67, 226);" >sh100 per M_sq (WITHIN NAIROBI)</span>
+            </div>
+            <div class="pay">
+                <h4>Payment Servises</h4>
+                <div class="mpesa" style="margin-top: 10px;" >
+                    <h5>Mpesa Goods And Services:</h5>
+                    <span style="color: rgb(18, 202, 18);">5626245</span>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+<!--Js Section-->
+{% block java %}
+<script src="{% static '/js/inherit.js' %}"></script>
+<script src="{% static '/js/products.js' %}"></script>
+{% endblock %}

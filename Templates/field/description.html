@@ -1,0 +1,50 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/09e314988c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{% static '/css/fieldMany.css' %}">
+    <link rel="stylesheet" href="{% static '/css/desc.css' %}">
+    <title>{{imageDesc.prod_name}}</title>
+</head>
+<body>
+
+    <div class="cursor"></div>
+    <!--Heading Place-->
+    <div class="start">
+        <h1>{{imageDesc.prod_name}}</h1>
+        <div class="links">
+            <a href="{% url 'index' %}"><span>Home</span></a>
+            <a href="{% url 'field' %}"><span>Categories</span></a>
+        </div>
+    </div>
+    <!--Heading Place-->
+
+    <div class="details">
+        <img src="{{imageDesc.image_url}}"  class="ress" alt="">
+        <div class="descm">
+            <div class="date">
+                <span class="non" >Upload Date:</span>
+                <h3>{{imageDesc.upload_time}}<h3>
+            </div>
+            <div class="descrm">
+                <span class="non" >Description:</span>
+                <p>{{imageDesc.description}}</p>
+            </div>
+        </div>
+    </div>
+
+    <!--Delete Upload-->
+    {% if request.user.is_authenticated %}
+    <div class="delete">
+        <a href="{% url 'delete' imageDesc.id_upload %}"><i class="fas fa-trash" id="trash" ></i></a>
+    </div>
+    {% endif %}
+    
+</body>
+<script src="{% static '/js/manyField.js' %}"></script>
+</html>

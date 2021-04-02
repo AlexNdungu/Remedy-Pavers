@@ -100,7 +100,7 @@ def eleganceView(request):
 
     context = {'elegances':elegances}
 
-    return render(request, 'field/elegance.html',context) 
+    return render(request, 'elegance.html',context) 
 
 def arrowView(request):
 

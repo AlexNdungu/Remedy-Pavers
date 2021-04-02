@@ -26,7 +26,7 @@ SECRET_KEY = '+&^$xa-1fh80w3g=8*o&4dxwrd$=#f!&1aik4tqva9t@bg6r*%'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['remedypaverblocks.herokuapp.com','127.0.0.1']
+ALLOWED_HOSTS = ['remedypaverblocks.herokuapp.com']
 
 
 # Application definition

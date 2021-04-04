@@ -41,7 +41,9 @@ prodMain.addEventListener('transitionend', () =>{
 
 
 
-/* ELEGANCE SLIDER */
+
+window.onload = function(){
+    /* ELEGANCE SLIDER */
 /* Image Product Hover Slider */
 
 let many = document.getElementsByClassName('many')
@@ -168,5 +170,8 @@ for (var i=0; i < zigs.length; i++){
         this.classList.add('activezig')
         document.getElementById('zig').src = this.src
     })
+}
+
+
 }
 

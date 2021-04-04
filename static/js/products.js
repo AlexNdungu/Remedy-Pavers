@@ -128,26 +128,6 @@ for (var i=0; i < lilys.length; i++){
 }
 
 
-/* DENE SHAPE */
-
-let denes = document.getElementsByClassName('denes')
-
-let activeImagesDen = document.getElementsByClassName('activeDen')
-
-for (var i=0; i < denes.length; i++){
-
-    denes[i].addEventListener('mouseover', function(){
-        console.log(activeImagesDen)
-        
-        if (activeImagesDen.length > 0){
-            activeImagesDen[0].classList.remove('activeDen')
-        }
-        
-
-        this.classList.add('activeDen')
-        document.getElementById('deny').src = this.src
-    })
-}
 
 /* ZIGZAG SHAPE */
 

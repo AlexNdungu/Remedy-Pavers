@@ -22,7 +22,6 @@ import Remedy1
 from django.contrib.sitemaps.views import sitemap
 from Remedy1.sitemaps import UploadSitemap
 
-app_name = "Remedy1"
 
 sitemaps = {
     'items':UploadSitemap,

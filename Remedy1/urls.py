@@ -2,6 +2,8 @@ from django.urls import path
 from . import views
 from Remedy1.views import fieldDesc
 
+app_name = "Remedy1"
+
 urlpatterns = [
     path('', views.index, name='index' ),
     path('inherit/', views.inherit, name='inherit' ),

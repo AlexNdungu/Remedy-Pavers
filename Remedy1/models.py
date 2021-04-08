@@ -32,7 +32,7 @@ class Upload(models.Model):
             return self.image_upload.url    
 
     def get_absolute_url(self):
-        return reverse ('Remedy1:upload',args=[self.id_upload,])       
+        return reverse ('upload',args=[self.id_upload,])       
 
 #Testimonial place
 class Testimonials(models.Model):

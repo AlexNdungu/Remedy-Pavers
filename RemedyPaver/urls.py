@@ -19,11 +19,18 @@ from django.conf import settings
 from django.conf.urls.static import static
 from django.conf.urls import handler404, handler500, handler403, handler400
 import Remedy1
+from django.contrib.sitemaps.views import sitemap
+from Remedy1.sitemaps import UploadSitemap
+
+sitemaps = {
+    'items':UploadSitemap,
+}
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('Remedy1.urls')),
+    path('sitemap.xml',sitemap,{'sitemaps':sitemaps}),
 ]
 
 urlpatterns = urlpatterns + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

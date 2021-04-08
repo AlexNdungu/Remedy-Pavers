@@ -1,4 +1,5 @@
 from django.db import models
+from django.urls import reverse
 
 #Products Model
 
@@ -29,6 +30,9 @@ class Upload(models.Model):
     def image_url(self):
         if self.image_upload and hasattr(self.image_upload, 'url'):
             return self.image_upload.url    
+
+    def get_absolute_url(self):
+        return reverse ('Remedy1:upLoad',args=[self.id,])       
 
 #Testimonial place
 class Testimonials(models.Model):

@@ -1,0 +1,418 @@
+/* Banner Section */
+.banner {
+    overflow: hidden;
+}
+
+.banner h1 {
+    position: absolute;
+    left: 37%;
+    bottom: 50%;
+    font-size: 100px;
+    font-weight: 500;
+    color: white;
+}
+
+.banner h2 {
+    position: absolute;
+    left: 39%;
+    bottom: 38%;
+    font-size: 100px;
+    font-weight: 500;
+    color: white;
+}
+
+.banner p {
+    position: absolute;
+    left: 1%;
+    bottom: 1%;
+    font-size: 20px;
+    font-weight: 200;
+    color: white;
+}
+
+/* Main Section */
+
+.secA {
+    height: 130vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    font-family: 'Rubik', sans-serif;
+}
+
+.mainA {
+    height: 30vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.mainA h1 {
+    padding-top: 60px
+}
+
+  /* The Nav About Page */
+
+.navA {
+    height: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}  
+
+.navA span {
+    font-size: 18px;
+    color: rgb(105, 105, 105);
+}
+
+    /* Indicate Navigation Items */
+
+.indicate {
+    height: 2px;
+    width: 100%;
+    position: relative;
+    background-color: rgb(223, 223, 223);
+} 
+    /* positioning Indication */
+.ind1{
+    height: 3px;
+    width: 25%;
+    position: absolute;
+    left: 0;
+    background-color: rgb(105, 105, 105);
+    transition: all .5s ease-in-out;
+}
+
+/* Item Section */
+
+.sections {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    transition: all .5s ease-in-out;
+}
+
+/* Info section Small */
+
+.ourStory {
+    height: 100%;
+    min-width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    transition: all .5s ease-in-out;
+}
+
+
+
+    /* Svg Images */
+
+#svg {
+    font-size: 100px;
+    color: rgb(0, 0, 121);
+}   
+
+.headT {
+    height: 35%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.headT h2 {
+    font-size: 35px;
+    color: rgb(57, 136, 189);
+}
+
+.str {
+    height: 30%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.str p {
+    font-size: 20px;
+    height: 40%;
+    width: 40%;
+    text-align: center;
+    color: rgb(92, 92, 92);
+}
+
+/* pages */
+
+.placeInd {
+    position: absolute;
+    bottom: 20px;
+    height: 20px;
+    width: 80px;
+    border-radius: 30px;
+    background-color: black;
+}
+
+/* Testimonial Part */
+
+.test1 {
+    height: 55%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    overflow-y: auto;
+
+}
+
+/* Scroll Bar FOR TESTIMONIALS */
+
+.test1::-webkit-scrollbar,.messa::-webkit-scrollbar {
+    width: 7px;
+}
+
+
+.testm {
+    margin-top: 30px;
+    height: 80%;
+    width: 40%;
+    border-radius: 20px;
+    background-color: rgb(118, 221, 247);
+    position: relative;
+}
+
+/* Testimonial Content */
+
+.messa {
+    height: 80%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    overflow-y: auto;
+}
+
+.messa p {
+    font-size: 17px;
+    height: 100%;
+    width: 90%;
+    margin-top: 40px;
+}
+
+#q {
+    font-size: 30px;
+    padding-left: 5px;
+    padding-top: 5px;
+}
+
+.name {
+    position: absolute;
+    bottom: 20px;
+    right: 30px;
+}
+
+/* Sep */
+
+.sepF {
+    height: 50px;
+    width: 100%;
+    background-color: rgb(240, 240, 240);
+}
+
+
+
+
+/* Responsiveness */
+
+/* 1030px */
+@media only screen and (max-width: 1030px){
+    /* Banner  */
+    .banner h1 {
+        left: 33%;
+    }
+    
+    .banner h2 {
+        left: 35%;
+    }
+
+    /* Main Section */
+
+    .secA {
+        height: 900px;
+    }
+
+    .mainA {
+        height: 200px;
+    }
+}
+
+/* 840px */
+@media only screen and (max-width: 840px){
+
+    /* Banner  */
+    .banner h1 {
+        left: 28%;
+    }
+    
+    .banner h2 {
+        left: 30%;
+    }
+    /* Main Section */
+
+    .secA {
+        height: 700px;
+    }
+
+}
+
+/* 550px */
+
+@media only screen and (max-width: 550px){
+
+    /* Banner  */
+    .banner h1 {
+        left: 19%;
+        font-size: 95px;
+    }
+    
+    .banner h2 {
+        left: 28%;
+        font-size: 85px;
+    }
+
+    .banner p {
+        font-size: 17px;
+    }
+    /* Svg Images */
+
+    #svg {
+        font-size: 70px;
+    }   
+
+    .headT h2 {
+        font-size: 30px;
+    }
+
+    .str p {
+        width: 80%;
+    }
+
+    /* Testimonials */
+
+    .test1 {
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+
+    .testm {
+        margin-top: 30px;
+        height: 300px;
+        width: 80%;
+    }
+
+    .testm:nth-child(1){
+        margin-top: 250px;
+    }
+}
+
+/* 420px */
+
+@media only screen and (max-width: 420px){
+    /* Banner  */
+    .banner h1 {
+        left: 13%;
+        font-size: 85px;
+    }
+    
+    .banner h2 {
+        left: 22%;
+        font-size: 75px;
+    }
+
+    .banner p {
+        font-size: 15px;
+    }
+
+    .secA {
+        height: 800px;
+    }
+
+    .mainA {
+        height: 300px;
+    }
+    .navA {
+        height: 200px;
+        flex-direction: column;
+    }  
+    
+}
+
+/* 375px */
+@media only screen and (max-width: 375px){
+
+    /* Banner  */
+    .banner h1 {
+        left: 3%;
+        font-size: 85px;
+    }
+    
+    .banner h2 {
+        left: 17%;
+        font-size: 75px;
+    }
+
+    .banner p {
+        font-size: 15px;
+    }
+
+    .str p {
+        font-size: 18px;
+    }
+    
+}
+
+/* 320px */
+@media only screen and (max-width: 320px){
+
+    /* Banner  */
+    .banner h1 {
+        left: 6%;
+        font-size: 75px;
+    }
+    
+    .banner h2 {
+        left: 19%;
+        font-size: 65px;
+    }
+
+    .banner p {
+        font-size: 15px;
+    }
+    .str p {
+        font-size: 16px;
+    }
+}
+
+/* 290px */
+@media only screen and (max-width: 290px){
+    /* Banner  */
+    .banner h1 {
+        left: 6%;
+        font-size: 65px;
+    }
+    
+    .banner h2 {
+        left: 19%;
+        font-size: 55px;
+    }
+
+    .banner p {
+        font-size: 13px;
+    }
+}

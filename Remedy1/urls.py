@@ -7,8 +7,8 @@ app_name = "Remedy1"
 urlpatterns = [
     path('', views.index, name='index' ),
     path('inherit/', views.inherit, name='inherit' ),
-    path('sendEmail/', views.sendEmail, namespace='sendEmail' ),
-    path('contactUs/', views.contactUs, namespace='contact' ),
+    path('sendEmail/', views.sendEmail, name='sendEmail' ),
+    path('contactUs/', views.contactUs, name='contact' ),
     
     #LOGIN and LOGOUT
     path('login/', views.log, name='login' ),

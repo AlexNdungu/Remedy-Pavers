@@ -47,12 +47,12 @@
         <div class="image-side">
             <!--Contact Button start-->
             <div class="contact">
-                <a href="{% url 'Remedy1:sendEmail' %}">Contacts</a>
+                <a href="{% url 'sendEmail' %}">Contacts</a>
             </div>
             <!--Contact Button start-->
             <!--Login Button start-->
             <div class="login">
-                <a href="{% url 'Remedy1:login' %}"><i class="fas fa-sign-in-alt" id="log" ></i></a>
+                <a href="{% url 'login' %}"><i class="fas fa-sign-in-alt" id="log" ></i></a>
             </div>
             <!--Login Button start-->
         </div>
@@ -62,11 +62,11 @@
     <!--Slide Nav Start-->
     <div class="slideNav">
         <ul class="listNav" >
-            <li><a href="{% url 'Remedy1:index' %}">Home</a></li>
-            <li><a href="{% url 'Remedy1:products' %}">Products</a></li>
-            <li><a href="{% url 'Remedy1:about' %}">Abouts</a></li>
-            <li><a href="{% url 'Remedy1:contact' %}">Contact Us</a></li>
-            <li><a href="{% url 'Remedy1:field' %}">FieldWork</a></li>
+            <li><a href="{% url 'index' %}">Home</a></li>
+            <li><a href="{% url 'products' %}">Products</a></li>
+            <li><a href="{% url 'about' %}">Abouts</a></li>
+            <li><a href="{% url 'contact' %}">Contact Us</a></li>
+            <li><a href="{% url 'field' %}">FieldWork</a></li>
         </ul>
     </div>
     <!--Slide Nav end-->
@@ -85,7 +85,7 @@
                 <i class="fas fa-mail-bulk" id="mail"></i>
                 <div class="mail">
                     <div class="mailgo">
-                        <a href="{% url 'Remedy1:sendEmail' %}"">Send</a>
+                        <a href="{% url 'sendEmail' %}"">Send</a>
                         <i class="fas fa-long-arrow-alt-right" id="sending" ></i>
                     </div>
                 </div>
@@ -102,11 +102,11 @@
             <div class="siteNav">
                 <i class="fas fa-compass" id="call" ></i>
                 <ul class="" >
-                    <li><a href="{% url 'Remedy1:index' %}">Home</a></li>
-                    <li><a href="{% url 'Remedy1:products' %}">Products</a></li>
-                    <li><a href="{% url 'Remedy1:about' %}">Abouts</a></li>
-                    <li><a href="{% url 'Remedy1:contact' %}">Contacts</a></li>
-                    <li><a href="{% url 'Remedy1:field' %}">FieldWork</a></li>
+                    <li><a href="{% url 'index' %}">Home</a></li>
+                    <li><a href="{% url 'products' %}">Products</a></li>
+                    <li><a href="{% url 'about' %}">Abouts</a></li>
+                    <li><a href="{% url 'contact' %}">Contacts</a></li>
+                    <li><a href="{% url 'field' %}">FieldWork</a></li>
                 </ul>
             </div>
             <div class="Commun">
@@ -117,8 +117,8 @@
         <div class="terms">
             <span><i class="far fa-copyright" id="copyright"></i>2021 RemedyPaver</span>
             <div class="tterms">
-                <a href="{% url 'Remedy1:contact' %}">Terms & Conditions</a>
-                <a href="{% url 'Remedy1:contact' %}">Privacy Policy</a>
+                <a href="{% url 'contact' %}">Terms & Conditions</a>
+                <a href="{% url 'contact' %}">Privacy Policy</a>
             </div>
         </div>
     </div>

@@ -36,7 +36,7 @@ def log(request):
 
         if user is not None:
             login(request, user)
-            return redirect('Remedy1:upload')
+            return redirect('upload')
         else:
             messages.info(request, 'Username Or Password Is INCORRECT!!!')
 

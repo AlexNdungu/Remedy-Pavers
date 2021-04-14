@@ -1,0 +1,1 @@
+from RemedyPaver.wsgi import application
